@@ -1,17 +1,17 @@
-cluster_name = "<name>"
-project = "<project>"
+cluster_name = "gcp-gromacs"
+project = "biomolecular-sims"
 zone = "us-west1-b"
 
-controller_image = "<image>"
-login_image = "<image>"
+controller_image = "us.gcr.io/biomolecular-sims/gromacs_2021.2:v1"
+login_image = "us.gcr.io/biomolecular-sims/gromacs_2021.2:v1"
 
 partitions = [
-  { name                 = "gromacs"
-    machine_type         = "<machine_type>"
+  { name                 = "gcp-gromacs"
+    machine_type         = "n1-standard-8"
     static_node_count    = 0
-    max_node_count       = <node_count>
+    max_node_count       = 1
     zone                 = "us-west1-b"
-    image                = "<image>"
+    image                = "us.gcr.io/biomolecular-sims/gromacs_2021.2:v1"
     image_hyperthreads   = true
     compute_disk_type    = "pd-standard"
     compute_disk_size_gb = 50

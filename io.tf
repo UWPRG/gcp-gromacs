@@ -28,14 +28,14 @@ variable "cluster_name" {
   type        = string
 }
 
-variable "compute_image_disk_size_gb" 
+variable "compute_image_disk_size_gb" {
   description = "Size of disk in gb for a compute node image."
   default     = 20
 }
 
 variable "compute_image_disk_type" {
   description = "Type of disk for a compute node image."
-  type        = "string"
+  type        = string
   default     = "pd-standard"
 }
 
@@ -125,7 +125,7 @@ variable "controller_scopes" {
 }
 
 variable "controller_service_account" {
-  description = "Service Account for the controller"
+  description = "Service Account for the controller."
   type        = string
   default     = "default"
 }

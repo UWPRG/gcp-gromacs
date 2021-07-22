@@ -1,4 +1,4 @@
-GMX_NAME ?= "gromacs"
+GMX_NAME ?= "gcp-gromacs"
 GMX_PROJECT ?= "biomolecular-sims"
 GMX_ZONE ?= "us-west1-b"
 GMX_MACHINE_TYPE ?= "n1-standard-8"
