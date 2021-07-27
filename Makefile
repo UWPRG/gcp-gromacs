@@ -1,5 +1,5 @@
 GMX_NAME ?= "gcp-gromacs"
-GMX_PROJECT ?= "biomolecular-sims"
+GMX_PROJECT ?= "summer-reu-2021"
 GMX_ZONE ?= "us-west1-b"
 GMX_MACHINE_TYPE ?= "n1-standard-8"
 GMX_NODE_COUNT ?= 1
